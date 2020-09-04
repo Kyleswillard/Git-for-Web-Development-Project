@@ -34,12 +34,19 @@ Stretch Review questions:
     5. In your own words, explain the box model. What is the fix for the box model? 
 Stretch Git Tasks
 - [ ] While the processes learned here will set you up to be successful in most situations, they are just the tip of the iceberg in learning Git. Independently research the following topics to learn more about Git.
-  - [ ] Research and understand what a `merge conflict` is and how to resolve it.
-  - [ ] Research the Git commands `pull`, `rebase`, `merge`. These commands will allow you to bring in changes that other developers push to the main branch.
-  - [ ] Research the Git commands `reset `, `revert`, `clean`. These commands will allow you to go back and amends previous commits you have made.
+  - [X] Research and understand what a `merge conflict` is and how to resolve it.
+      A: A merge conflict happens when the same line of code is modified by multple devs. To resolve it from what I understand it is required to create an additional branch to save changes, then merge with the master branch post review to ensure that the better, or best code is added to the branch. 
 
-- [ ] Research and set up a Graphical User Interface (GUI) Git console. 
+  - [X] Research the Git commands `pull`, `rebase`, `merge`. These commands will allow you to bring in changes that other developers push to the main branch.
+    A: git pull - immediately download all changes to the main repo. Rebase - According the freecodecamp it is the method to compress all changes into a single patch. merge- merges all changes from a branch into the master. 
+  - [X] Research the Git commands `reset `, `revert`, `clean`. These commands will allow you to go back and amends previous commits you have made.
+    A: git reset - undos local changes to a git repo. Revert - makes a new commit. safer alternative to reset when it comes to losing work. clean - removes any files that are not under version control, starting from the current directory. 
 
-- [ ] Research and setup SSH keys with GitHub, so that you do not need to input your username/password each time you push. 
+- [X] Research and set up a Graphical User Interface (GUI) Git console. 
+  A: Downloaded and set up Github Desktop (made sense to use the client for the Version Control that we were already using).
+
+- [X] Research and setup SSH keys with GitHub, so that you do not need to input your username/password each time you push.
+A: Used the instructions from: https://inchoo.net/dev-talk/how-to-generate-ssh-keys-for-git-authorization/
+A1: Can confirm via image that this was completed. 
 
 
