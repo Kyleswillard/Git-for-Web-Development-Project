@@ -1,0 +1,138 @@
+
+https://codepen.io/kylewillard/pen/bGpYWvv
+
+Copy the questions below into the first-lastname.txt file on your github repo - answer each question and then push your changes. 
+
+    1. What is Semantic HTML? 
+    A: Tags that show specificity making HTML easier to read. (Header, Footer, etc.)
+
+    2. What is HTML used for? 
+    A: HTML provides specific tags with default styling to create a website.
+
+    3. What is an attribute and where do we put it? 
+    A: An attribute is a modification of the html element.
+
+    4. What is the h1 tag used for? How many times should I use it on a page?
+    A: H1 tag is the largest header tag. You only want to use it 1 time to ensure that search engines are not confused by it. 
+
+    5. Name two tags that have required attributes
+    A: Anchor <a> & Image <img>
+
+
+    6. What do we put in the head of our HTML document? 
+     A: The HTML head should have the title, stylesheets, the meta tags, the viewport, doctype.
+
+    7. What is an id? 
+    A: ID is the most specific way to identify an html element. It is only able to be used once.
+
+    8. What elements can I add an id to? 
+    A: It is most often used for divs, and h1-6. 
+
+    9. How many times can I use the same id on a page? 
+     A: As stated above it can only be used once.
+
+    10. What is a class? 
+     A: class is when you want to aim css at multiple tags on the page. 
+
+    11. What elements can I add a class to? 
+	A: Almost all (cant add it to doctype or similar.
+
+    12. How many times can I use the same class on a page? 
+	A:As many as you need to use it.
+
+    13. How do I get my link to open in a new tab?
+	A: "_blank"
+
+    14. What is the alt attribute in the image tag used for? 
+	A: The Alt attribute is in case someone is using a reader, or the image does not load so that you can tell what the image was of. 
+
+    15. How do I reference an id?
+	A: In CSS #ID or in JS getElementById('')
+
+    16. What is the difference between a section and a div
+	A: Section has a symantic name. Essentially the same thing. 
+
+    17. What is CSS used for? 
+	A: CSS is the way that we style the website.
+
+    18. How to we select an element? Example - every h2 on the page
+	A: element {} or h2 {}
+
+    19. What is the difference between a class and an id? - Give me an example of when I might use each one
+	A: Class is used multple times, ID is used once. Class is usually used for containers, or divs. ID is more for specific headers (h1 instead of using global tag)
+
+    20. How do we select classes in CSS?
+	A: select classes like this: .class {}
+
+    21. How do we select a p element with a single class of �human��?
+	A: .human p {} or if the P tag is the only tag with the class simply due .human {}
+
+    22. What is a parent child selector? When would this be useful? 
+	A: Parent is the higher "level" selector, while child is contained below it. For example .class P would select the paragraphs inside of the portion of the HTML that contains that the paragraph you want to select. 
+It is super common when making nav bars. nav a {} nav a: hover {}
+
+    23. How do you select all links within a div with the class of sidebar?
+	A: class a {}
+
+    24. What is a pseudo selector?
+	A: its something like hover. It is a built selector, and is used to modify the selector. 
+
+    25. What do we use the change the spacing between lines?
+	A: line-height
+
+    26. What do we use to change the spacing between letters?
+	A: letter-spacing
+
+    27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+	A: Text-transform
+
+    28. How do I add a 1px border around my div that is dotted and black?
+	A: border: 1px dotted black;
+
+    29. How do I select everything on the page? 
+	A: universal selector or *
+
+    30. How do I write a comment in CSS?
+	A: /* Comments here */
+
+    31. How do I find out what file I am in, when I am using the command line? 
+	A: pwd
+
+    32. Using the command line - how do I see a list of files/folders in my current folder?
+	A: ls
+
+    33. How do I remove a file via the command line? Why do I have to be careful with this? 
+	A: git rm -r file-name if you delete this way its 100% gone.
+
+    34. Why should I use version control? 
+	A: so that when you break your code you can revert to the last stable version. 
+
+    35. How often should I commit to github?
+	A: every time that I make a major change (or at regular intervals.
+
+    36. What is the command we would use to push our repo up to github? 
+	A: git push origin first-last
+
+    37. Walk me through Lambda's git flow. 
+	A: Fork repo > add TL as collab > do homework >git commit -m "comment" > git push origin first-last > create pull request with TL as reviewer > wait.
+
+Stretch Questions
+
+    1. What is the difference between an inline element and a block element?
+	A: Inline is on the same line as the next or previous element. BLock shifts to a new line. 
+
+    2. What happens when an element is positioned absolutely?
+	A: Position: Absolute; positions itself relative to previous element. 
+ 
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width?
+	A:  flex
+
+    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+	A: BLOCK = div, P , br
+	   INLINE: Span, a, cite
+	   Inline-block: img
+
+    5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
+The box 
+	A: The box model is Essentially the padding, margin and border. It controls the sizing, shape, spacing and overal look and feel of a site. Due to the way that this all works means that there are issues with overlap, and has next to no support for responsive design. The easiest fix was the migration in ideology from using the box model to the flex box design model. By using the flex box all elements that the box model would control now respect the bounderies that they were give, it fixes the issues on the responsive end. 
+
